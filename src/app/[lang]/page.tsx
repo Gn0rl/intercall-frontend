@@ -31,7 +31,7 @@ const Component: FC = () => {
 
   return (
     <div className={cn(styles["root_" + theme], styles.root)}>
-      <h1>{t("hello")}</h1>
+      <h1>{t("hello", {price: "33"})}</h1>
     </div>
   );
 };
