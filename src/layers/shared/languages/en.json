@@ -1,3 +1,5 @@
 {
-  "hello": "Hello World! {price}"
+  "hello": "Hello World! {price}",
+  "404Message": "This page is not exist",
+  "toMain": "go to main"
 }

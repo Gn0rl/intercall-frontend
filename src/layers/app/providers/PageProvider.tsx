@@ -1,10 +1,13 @@
 import { FC, ReactElement } from "react";
+
+import { Language } from "@/layers/shared/types";
+
 import { ThemeProvider } from "./ThemeProvider";
 import { LanguageProvider } from "./LanguageProvider";
 
 interface Props {
     children: ReactElement;
-    lang: "ru" | "en-US";
+    lang: Language;
 }
 
 export const PageProvider: FC<Props> = ({ children, lang }) => {
