@@ -7,13 +7,12 @@ import { dictionary } from "@/layers/shared/languages";
 export function useTranslate() {
   const lang: Language = useContext(LanguageContext);
 
-  return (key: string, params: Object) => {
+  return (key: string, params?: Record<string, string | number>) => {
   const dictionaryItem = dictionary[lang][key];
-  if(dictionaryItem){
-    return dictionaryItem.replace(/{(\w+)}/g, (match, p1) => params[p1]);
+  if(dictionaryItem && params){
+    return dictionaryItem.replace(/{(\w+)}/g, (match, p1) => String(params[p1]));
   }
-  return key;
+  return dictionaryItem || key;
 }
-  
   //return (key: string) => dictionary[lang][key];
 }

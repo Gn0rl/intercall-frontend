@@ -4,7 +4,7 @@ import { createContext, FC, ReactElement } from "react";
 export const LanguageContext = createContext<Language>("ru");
 
 interface Props {
-  lang: "ru" | "en-US";
+  lang: Language;
   children: ReactElement;
 }
 
