@@ -7,11 +7,11 @@ import styles from "../page.module.scss"
 
 import { PageProvider } from "@/layers/app/providers";
 
-import { Language } from "@/layers/shared/types";
-
 import { Error404 } from "@/layers/widgets/404";
+
 import { useTheme } from "@/layers/app/hooks";
 
+import { Language } from "@/layers/shared/types";
 interface Props {
   params: Promise<{ lang: Language }>;
 }

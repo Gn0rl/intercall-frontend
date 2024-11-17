@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from './404.module.scss';
-
 import { useTranslate } from "@/layers/app/hooks";
+
+import styles from './404.module.scss';
 
 
 const IMAGE_URL = "/image/file.svg";

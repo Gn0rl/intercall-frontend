@@ -1,11 +1,10 @@
 "use client";
 
 import { FC, use } from "react";
-import { PageProvider } from "../../layers/app/providers";
-import { useTheme } from "../../layers/app/hooks";
 import cn from "classnames";
 
-import { useTranslate } from "@/layers/app/hooks";
+import { PageProvider } from "../../layers/app/providers";
+import { useTheme, useTranslate } from "@/layers/app/hooks";
 
 import { Language } from "@/layers/shared/types";
 

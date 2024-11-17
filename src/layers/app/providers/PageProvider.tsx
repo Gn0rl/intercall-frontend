@@ -1,7 +1,9 @@
 import { FC, ReactElement } from "react";
+
+import { Language } from "@/layers/shared/types";
+
 import { ThemeProvider } from "./ThemeProvider";
 import { LanguageProvider } from "./LanguageProvider";
-import { Language } from "@/layers/shared/types";
 
 interface Props {
     children: ReactElement;
