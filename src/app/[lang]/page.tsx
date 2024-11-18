@@ -1,10 +1,11 @@
 'use client'
 
+import cn from 'classnames'
+import { FC, use } from 'react'
+
 import { useTheme, useTranslate } from '@/layers/app/hooks'
 import { PageProvider } from '@/layers/app/providers'
 import { Language } from '@/layers/shared/types'
-import cn from 'classnames'
-import { FC, use } from 'react'
 
 import styles from './page.module.scss'
 
