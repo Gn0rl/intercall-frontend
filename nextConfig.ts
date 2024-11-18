@@ -1,11 +1,11 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 export const nextConfig: NextConfig = {
     sassOptions: {
-        implementation: "sass-embedded",
+        implementation: 'sass-embedded',
     },
     i18n: {
-        locales: ["en-US", "ru"],
-        defaultLocale: "ru",
+        locales: ['en-US', 'ru'],
+        defaultLocale: 'ru',
     },
-};
+}

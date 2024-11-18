@@ -1,18 +1,17 @@
 .root {
+    &_dark {
+        --page-background-color: #010101;
+        --page-text-color: #fff;
+    }
 
-  &_dark {
-    --page-background-color: #010101;
-    --page-text-color: #fff;
-  }
+    &_light {
+        --page-background-color: #fff;
+        --page-text-color: #000;
+    }
 
-  &_light {
-    --page-background-color: #fff;
-    --page-text-color: #000;
-  }
+    background-color: var(--page-background-color);
+    color: var(--page-text-color);
 
-  background-color: var(--page-background-color);
-  color: var(--page-text-color);
-
-  min-height: 100vh;
-  min-width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
 }

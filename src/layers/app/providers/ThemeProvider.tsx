@@ -1,10 +1,11 @@
 'use client'
 
-import { Theme } from "@/layers/shared/types";
-import { createContext, FC, ReactElement, useEffect, useState } from "react";
+import { FC, ReactElement, createContext, useEffect, useState } from 'react'
+
+import { Theme } from '@/layers/shared/types'
 
 interface Props {
-    children: ReactElement;
+    children: ReactElement
 }
 
 const DEFAULT_THEME = 'dark'
@@ -15,12 +16,14 @@ export const ThemeProvider: FC<Props> = ({ children }) => {
     const [theme, setTheme] = useState<Theme>(DEFAULT_THEME)
 
     useEffect(() => {
-        const isDarkMode = globalThis.matchMedia('(prefers-color-scheme: dark)').matches;
+        const isDarkMode = globalThis.matchMedia(
+            '(prefers-color-scheme: dark)'
+        ).matches
 
-        setTheme(isDarkMode ? "dark" : "light")
+        setTheme(isDarkMode ? 'dark' : 'light')
     }, [])
 
-    return <ThemeContext.Provider value={theme}>
-        {children}
-    </ThemeContext.Provider>;
-};
+    return (
+        <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
+    )
+}
