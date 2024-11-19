@@ -1,1 +1,1 @@
-export { Error404 } from './ui';
+export { Error404 } from './ui'

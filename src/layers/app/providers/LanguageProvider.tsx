@@ -1,15 +1,18 @@
-import { Language } from "@/layers/shared/types";
-import { createContext, FC, ReactElement } from "react";
+import { FC, ReactElement, createContext } from 'react'
 
-export const LanguageContext = createContext<Language>("ru");
+import { Language } from '@/layers/shared/types'
+
+export const LanguageContext = createContext<Language>('ru')
 
 interface Props {
-  lang: Language;
-  children: ReactElement;
+    lang: Language
+    children: ReactElement
 }
 
 export const LanguageProvider: FC<Props> = ({ children, lang }) => {
-  return (
-    <LanguageContext.Provider value={lang}>{children}</LanguageContext.Provider>
-  );
-};
+    return (
+        <LanguageContext.Provider value={lang}>
+            {children}
+        </LanguageContext.Provider>
+    )
+}
