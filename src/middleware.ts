@@ -8,7 +8,7 @@ export function middleware(request: any) {
     const { pathname } = request.nextUrl
     const pathnameHasLocale = locales.some(
         (locale) =>
-            pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+            pathname.split('/')[1] == locale || pathname === `/${locale}`
     )
 
     console.log(pathname)
