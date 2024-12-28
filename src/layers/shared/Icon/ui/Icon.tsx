@@ -4,7 +4,7 @@ import cn from 'classnames'
 import Image from 'next/image'
 import { FC, MouseEvent } from 'react'
 
-import { Button } from '@mui/material'
+import Button from '@mui/material/Button'
 
 import styles from './Icon.module.scss'
 
