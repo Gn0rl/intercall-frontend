@@ -1,13 +1,13 @@
-import { useContext } from 'react'
-
-import { ThemeContext } from '../providers'
+import { useTheme as useMuiTheme } from '@mui/material'
 
 export const useTheme = () => {
-    const theme = useContext(ThemeContext)
+    const theme = useMuiTheme()
+    const { mode } = theme.palette
 
     return {
-        theme,
-        isDarkThme: theme === 'dark',
-        isLightTheme: theme === 'light',
+        theme: mode,
+        isDarkThme: mode === 'dark',
+        isLightTheme: mode === 'light',
+        more: theme,
     }
 }
