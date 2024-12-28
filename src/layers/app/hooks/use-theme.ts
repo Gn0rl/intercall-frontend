@@ -6,7 +6,7 @@ export const useTheme = () => {
 
     return {
         theme: mode,
-        isDarkThme: mode === 'dark',
+        isDarkTheme: mode === 'dark',
         isLightTheme: mode === 'light',
         more: theme,
     }

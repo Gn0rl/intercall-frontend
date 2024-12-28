@@ -3,7 +3,7 @@ import localFont from 'next/font/local'
 
 import { PageProvider } from '@/layers/app/providers'
 import { Language } from '@/layers/shared/types'
-import { Navbar } from '@/layers/widgets/navbar/ui/Navbar'
+import { Navbar } from '@/layers/widgets/navbar'
 
 import './globals.scss'
 
