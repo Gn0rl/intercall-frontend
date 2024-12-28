@@ -14,6 +14,6 @@ export function useTranslate() {
                 String(params[p1])
             )
         }
-        return dictionaryItem || key
+        return dictionaryItem ?? key
     }
 }
