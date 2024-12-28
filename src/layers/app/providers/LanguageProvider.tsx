@@ -1,3 +1,5 @@
+'use client'
+
 import { FC, ReactElement, createContext } from 'react'
 
 import { Language } from '@/layers/shared/types'

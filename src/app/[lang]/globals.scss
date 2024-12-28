@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 html,
 body {
     max-width: 100vw;
@@ -19,4 +21,30 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.root {
+    &_dark {
+        --page-background-color: #010101;
+        --page-text-color: #fff;
+    }
+
+    &_light {
+        --page-background-color: #fff;
+        --page-text-color: #000;
+    }
+
+    background-color: var(--page-background-color);
+    color: var(--page-text-color);
+
+    min-height: 100vh;
+    min-width: 100vw;
 }

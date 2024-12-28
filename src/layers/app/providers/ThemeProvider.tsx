@@ -10,8 +10,10 @@ interface Props {
 
 const DEFAULT_THEME = 'dark'
 
+// @deprecated
 export const ThemeContext = createContext(DEFAULT_THEME)
 
+// @deprecated
 export const ThemeProvider: FC<Props> = ({ children }) => {
     const [theme, setTheme] = useState<Theme>(DEFAULT_THEME)
 

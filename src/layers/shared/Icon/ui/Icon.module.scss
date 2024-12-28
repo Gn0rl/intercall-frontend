@@ -1,0 +1,17 @@
+.root {
+    background-color: var(--primary-background-color);
+    border-radius: 1rem;
+    cursor: pointer;
+
+    padding: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 100ms;
+}
+
+.image {
+    padding: 0;
+}

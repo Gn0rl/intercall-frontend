@@ -1,9 +1,10 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 
 import { useTranslate } from '@/layers/app/hooks'
+import { Page } from '@/layers/app/types'
+import { Link } from '@/layers/shared/Link'
 
 import styles from './404.module.scss'
 
@@ -18,8 +19,8 @@ export function Error404() {
                 <Image width={256} height={256} src={IMAGE_URL} alt="" />
                 <h1 className={styles.title}>404</h1>
                 <p>
-                    {t('404Message')},{' '}
-                    <Link href="/" className={styles.link}>
+                    {t('404Message')}{' '}
+                    <Link href={Page.Home} className={styles.link}>
                         {t('toMain')}
                     </Link>
                 </p>

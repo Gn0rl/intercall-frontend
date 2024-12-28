@@ -1,0 +1,29 @@
+@import '@/layers/app/variables.scss';
+
+.nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: $nav-panel-size;
+    height: 100dvh;
+
+    background-color: var(--primary-background-color);
+}
+
+.chats {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+
+    padding-top: 10px;
+}
+
+.chatIcon {
+    border-radius: 1rem;
+}
+
+.chatIconImage {
+    border-radius: 1rem;
+}

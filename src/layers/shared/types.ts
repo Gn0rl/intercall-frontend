@@ -1,2 +1,2 @@
 export type Theme = 'dark' | 'light'
-export type Language = 'ru' | 'en'
+export type Language = 'ru'
